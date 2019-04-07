@@ -16,7 +16,7 @@ def correct(im,x,y):
     else:
         return False
 def normalise_main(im,x_pupil,y_pupil,r_pupil,x_iris,y_iris,r_iris):   
-    radial_resolution=8 #no of data points
+    radial_resolution=64 #no of data points
     angular_resolution=256 #no of radial lines
     angles=angular_resolution
     radius=radial_resolution+2
