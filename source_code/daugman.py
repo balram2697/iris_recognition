@@ -40,7 +40,7 @@ def daugman_main(im1,im,x_pupil,y_pupil,r_pupil):
                 p=circular_integral(img1,b[l],a[k],c[g],1,3,8)+circular_integral(img1,b[l],a[k],c[g],5,7,8)
                 hd[g]=p
             hd=(hd[2:]-hd[:-2])/2
-            hd=gaussian_filter(hd,3.5)
+            hd=gaussian_filter(hd,5)
             hd=np.abs(hd)
             maxi=np.max(hd)
             if(maxi>mt):
